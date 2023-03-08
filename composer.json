@@ -1,0 +1,46 @@
+{
+    "name": "red-jasmine/admin",
+    "description": ":package_description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/red-jasmine/admin",
+    "keywords": ["Laravel", "Admin"],
+    "require": {
+        "red-jasmine/support": "1.0.x-dev",
+        "dcat/laravel-admin": "2.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "RedJasmine\\Admin\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RedJasmine\\Admin\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RedJasmine\\Admin\\AdminServiceProvider"
+            ],
+            "aliases": {
+                "Admin": "RedJasmine\\Admin\\Facades\\Admin"
+            }
+        },
+        "branch-alias": {
+            "dev-master": "1.0.x-dev",
+            "dev-main": "1.0.x-dev"
+        }
+    }
+}
