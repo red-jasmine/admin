@@ -4,6 +4,10 @@ namespace RedJasmine\Admin\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
+
+/**
+ * @method static user()
+ */
 class Admin extends Facade
 {
     /**
@@ -13,6 +17,6 @@ class Admin extends Facade
      */
     protected static function getFacadeAccessor(): string
     {
-        return 'admin';
+        return 'red-jasmine.admin';
     }
 }
