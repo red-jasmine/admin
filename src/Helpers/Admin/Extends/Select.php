@@ -2,13 +2,21 @@
 
 namespace RedJasmine\Admin\Helpers\Admin\Extends;
 
+use Closure;
 use Dcat\Admin\Admin;
+use Throwable;
 
 class Select extends \Dcat\Admin\Grid\Displayers\Select
 {
+    /**
+     * @param $options
+     * @param $refresh
+     * @return string
+     * @throws Throwable
+     */
     public function display($options = [], $refresh = false)
     {
-        if ($options instanceof \Closure) {
+        if ($options instanceof Closure) {
             $options = $options->call($this, $this->row);
         }
 
