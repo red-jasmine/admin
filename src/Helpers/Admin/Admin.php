@@ -24,13 +24,7 @@ class Admin implements User
       return  \Dcat\Admin\Admin::user()->id;
     }
 
-    /**
-     * @return $this|null
-     */
-    public function getOwner() : static|null
-    {
-        return null;
-    }
+
 
 
 }
