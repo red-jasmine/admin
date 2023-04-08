@@ -32,10 +32,12 @@ class AdminProvider
             if ($this->isCreating()) {
                 $this->creator_type = 'admin';
                 $this->creator_uid  = Admin::user()->id;
+                $this->creator_nickname  = Admin::user()->name;
             }
             if ($this->isEditing()) {
                 $this->updater_type = 'admin';
                 $this->updater_uid  = Admin::user()->id;
+                $this->updater_nickname  = Admin::user()->name;
             }
         });
     }
