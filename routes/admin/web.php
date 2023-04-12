@@ -1,9 +1,9 @@
 <?php
 
+use Dcat\Admin\Admin;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
-use Dcat\Admin\Admin;
-use RedJasmine\Support\Helpers\DomainRoute;
+use RedJasmine\MallCore\Helpers\DomainRoute;
 
 Admin::routes();
 
