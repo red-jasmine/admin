@@ -3,7 +3,6 @@
 namespace RedJasmine\Admin\Models;
 
 use RedJasmine\Support\Contracts\UserInterface;
-use RedJasmine\Support\Enums\UserType;
 
 class Administrator extends \Dcat\Admin\Models\Administrator implements UserInterface
 {
@@ -15,7 +14,7 @@ class Administrator extends \Dcat\Admin\Models\Administrator implements UserInte
 
     public function getUserType() : string|int
     {
-        return UserType::ADMIN->value;
+        return 'admin';
     }
 
     public function getUID() : string|int
