@@ -13,7 +13,7 @@ class HomeController extends Controller
         return $content
             ->header('Dashboard')
             ->description('Description...')
-            ->body('body');
+            ->body('');
 
     }
 

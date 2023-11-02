@@ -33,10 +33,7 @@
         "laravel": {
             "providers": [
                 "RedJasmine\\Admin\\AdminServiceProvider"
-            ],
-            "aliases": {
-                "Admin": "RedJasmine\\Admin\\Facades\\Admin"
-            }
+            ]
         },
         "branch-alias": {
             "dev-master": "1.0.x-dev",

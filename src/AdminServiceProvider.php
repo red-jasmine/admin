@@ -35,23 +35,12 @@ class AdminServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/admin.php', 'admin');
 
-        // Register the service the package provides.
-        $this->app->singleton('red-jasmine.admin', function ($app) {
-            return new Admin;
-        });
+
+
     }
 
-    /**
-     * Get the services provided by the provider.
-     *
-     * @return array
-     */
-    public function provides()
-    {
-        return ['admin'];
-    }
+
 
     /**
      * Console-specific booting.
@@ -61,9 +50,7 @@ class AdminServiceProvider extends ServiceProvider
     protected function bootForConsole(): void
     {
         // Publishing the configuration file.
-        $this->publishes([
-            __DIR__.'/../config/admin.php' => config_path('admin.php'),
-        ], 'admin.config');
+
 
         // Publishing the views.
         /*$this->publishes([
