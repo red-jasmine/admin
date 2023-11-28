@@ -8,17 +8,17 @@ class Admin implements UserInterface
 {
 
     /**
-     * @return string|int
+     * @return string
      */
-    public function getUserType() : string|int
+    public function getUserType() : string
     {
         return 'admin';
     }
 
     /**
-     * @return string|int
+     * @return int
      */
-    public function getUID() : string|int
+    public function getUID() : int
     {
         return \Dcat\Admin\Admin::user()->id;
     }
