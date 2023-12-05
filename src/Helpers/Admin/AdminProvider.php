@@ -17,6 +17,8 @@ class AdminProvider
         Column::extend('select', Select::class);
         Column::extend('enums', Enums::class);
 
+        Form::extend('select2', Extends\Forms\Select::class);
+
 
         self::adminer();
     }

@@ -15,7 +15,7 @@ class AdminServiceProvider extends ServiceProvider
     public function boot(): void
     {
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'red-jasmine');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'red-jasmine');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'red-jasmine.admin');
          $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutesFrom(__DIR__ . '/../routes/admin/web.php');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
