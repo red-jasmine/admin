@@ -24,7 +24,6 @@
     });
     @else
 
-        console.log('configs',configs)
     $this.select2(configs);
     @endif
 
