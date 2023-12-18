@@ -10,7 +10,7 @@ class Admin implements UserInterface
     /**
      * @return string
      */
-    public function getUserType() : string
+    public function getType() : string
     {
         return 'admin';
     }
@@ -18,7 +18,7 @@ class Admin implements UserInterface
     /**
      * @return int
      */
-    public function getUID() : int
+    public function getID() : int
     {
         return \Dcat\Admin\Admin::user()->id;
     }

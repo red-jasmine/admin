@@ -12,12 +12,12 @@ class Administrator extends \Dcat\Admin\Models\Administrator implements UserInte
     }
 
 
-    public function getUserType() : string
+    public function getType() : string
     {
         return 'admin';
     }
 
-    public function getUID() : int
+    public function getID() : int
     {
         return $this->getAuthIdentifier();
     }
