@@ -4,7 +4,7 @@ namespace RedJasmine\Admin\Helpers\Admin;
 
 use RedJasmine\Support\Contracts\UserInterface;
 
-class Admin implements UserInterface
+class Admin  implements UserInterface
 {
 
     /**
