@@ -7,7 +7,6 @@ use Dcat\Admin\Form;
 use Dcat\Admin\Grid\Column;
 use RedJasmine\Admin\Helpers\Admin\Extends\Enums;
 use RedJasmine\Admin\Helpers\Admin\Extends\Select;
-use RedJasmine\Support\Enums\UserType;
 
 class AdminProvider
 {
@@ -33,12 +32,12 @@ class AdminProvider
     {
         Form::macro('adminer', function () {
             if ($this->isCreating()) {
-                $this->creator_type = UserType::ADMIN->value;
+                $this->creator_type = 'admin';
                 $this->creator_id   = Admin::user()->id;
 
             }
             if ($this->isEditing()) {
-                $this->updater_type = UserType::ADMIN->value;
+                $this->updater_type = 'admin';
                 $this->updater_id   = Admin::user()->id;
             }
         });
